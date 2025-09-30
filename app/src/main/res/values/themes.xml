@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ServiceSight" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/light</item>
+        <item name="colorPrimaryDark">@color/heading</item>
+        <item name="android:statusBarColor">@color/heading</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="boxStrokeColor">@color/dark</item>
+        <item name="placeholderTextColor">@color/dark</item>
+        <item name="prefixTextColor">@color/dark</item>
+        <item name="suffixTextColor">@color/dark</item>
+        <item name="hintTextColor">@color/dark</item>
+        <item name="counterTextColor">@color/dark</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="cursorColor">@color/dark</item>
+        <item name="colorAccent">@color/dark</item>
+        <item name="colorPrimary">@color/light</item>
+        <item name="startIconTint">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+    <style name="Textbox" parent="Theme.ServiceSight">
+        <item name="android:background">@drawable/border_text</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_black</item>
+    </style>
+    <style name="LoginButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_only</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/heading</item>
+        <item name="android:backgroundTint">@color/heading</item>
+    </style>
+    <style name="DarkButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_only</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/heading</item>
+        <item name="android:backgroundTint">@color/heading</item>
+        <item name="fontFamily">@font/nunito</item>
+    </style>
+    <style name="DisabledButton">
+        <item name="android:textColor">@color/heading</item>
+        <item name="android:background">@drawable/shape_only</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/headdark</item>
+        <item name="android:backgroundTint">@color/headdark</item>
+        <item name="fontFamily">@font/nunito</item>
+    </style>
+    <style name="AddButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/shape_only</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/approve</item>
+        <item name="android:backgroundTint">@color/approve</item>
+    </style>
+    <style name="DeleteButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/shape_only</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/rejected</item>
+        <item name="android:backgroundTint">@color/rejected</item>
+    </style>
+    <style name="SelectButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_only</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/heading</item>
+        <item name="android:backgroundTint">@color/heading</item>
+    </style>
+    <!--<style name="AddButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_only</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/green</item>
+        <item name="android:backgroundTint">@color/green</item>
+    </style>
+    <style name="DeleteButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_only</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/red</item>
+        <item name="android:backgroundTint">@color/red</item>
+    </style>-->
+    <style name="Toolbar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:background">@color/heading</item>
+    </style>
+    <style name="BackColor" parent="Theme.ServiceSight">
+        <item name="android:background">@color/light</item>
+        <item name="android:tint">@color/dark</item>
+    </style>
+    <style name="BottomLogo">
+        <item name="android:src">@drawable/logolight</item>
+    </style>
+    <style name="Layouts" parent="Theme.ServiceSight">
+        <item name="android:background">@drawable/border_light</item>
+    </style>
+    <style name="Heading" parent="Theme.ServiceSight">
+        <item name="android:background">@drawable/top_shape_light</item>
+        <item name="android:textColor">@color/light</item>
+    </style>
+    <style name="InvertLayouts" parent="Theme.ServiceSight">
+        <item name="android:background">@drawable/border_only_dark</item>
+        <item name="android:textColor">@color/light</item>
+    </style>
+    <style name="Menu">
+        <item name="itemTextColor">@color/dark</item>
+        <item name="android:background">@color/light</item>
+        <item name="itemIconTint">@color/dark</item>
+    </style>
+    <style name="LogoCmp">
+        <item name="android:src">@drawable/cmplight</item>
+    </style>
+    <style name="FullBorder">
+        <item name="android:background">@drawable/full_border_dark</item>
+    </style>
+    <style name="FullBorderInvert">
+        <item name="android:background">@drawable/full_invert_border_dark</item>
+    </style>
+    <style name="InvertTextColor">
+        <item name="android:textColor">@color/light</item>
+    </style>
+    <style name="Spinner" parent="Theme.ServiceSight">
+        <item name="android:background">@color/light</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_black</item>
+    </style>
+    <style name="LeftOpen">
+        <item name="android:background">@drawable/left_open_light</item>
+    </style>
+    <style name="RightOpen">
+        <item name="android:background">@drawable/right_open_light</item>
+    </style>
+    <style name="NoBorder">
+        <item name="android:background">@drawable/noborder_light</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.Material3.Dark.Dialog">
+        <item name="showTitle">false</item>
+        <item name="backgroundColor">@color/light</item>
+        <item name="colorControlActivated">@color/grey</item>
+        <item name="colorAccent">@color/dark</item>
+        <item name="android:textColorPrimary">@color/light</item>
+        <item name="android:textColorSecondary">@color/light</item>
+        <item name="colorPrimary">@color/light</item>
+        <item name="colorSecondary">@color/dark</item>
+        <item name="fontFamily">@font/nunito</item>
+    </style>
+    <style name="ButtonOnly">
+        <item name="android:background">@drawable/button_only</item>
+    </style>
+    <style name="CheckBox">
+        <item name="colorAccent">@color/dark</item>
+        <item name="android:buttonTint">@color/dark</item>
+    </style>
+    <style name="DialogDateTheme" parent="Theme.Material3.Dark.Dialog">
+        <item name="showTitle">false</item>
+        <item name="colorControlActivated">@color/grey</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+    <style name="ProgressTheme">
+        <item name="colorAccent">@color/heading</item>
+        <item name="colorControlActivated">@color/heading</item>
+    </style>
+</resources>

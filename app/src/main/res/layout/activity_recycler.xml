@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:maxHeight="50dp"
+            android:minHeight="50dp"
+            android:text="@string/src_ser"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/heading"
+            android:contentDescription="@string/bck_icn"
+            android:src="@drawable/icon_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/toplogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrDate"
+        style="@style/FullBorderInvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading">
+
+        <TextView
+            android:id="@+id/txtFDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxHeight="48dp"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxHeight="48dp"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spnrBranch"
+        style="@style/RightOpen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:maxHeight="58dp"
+        android:minWidth="150dp"
+        android:minHeight="58dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/spnrUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnrDate" />
+
+    <Spinner
+        android:id="@+id/spnrUser"
+        style="@style/LeftOpen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:maxHeight="58dp"
+        android:minWidth="150dp"
+        android:minHeight="58dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnrDate" />
+
+    <Spinner
+        android:id="@+id/spnrService"
+        style="@style/FullBorderInvert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:maxWidth="150dp"
+        android:maxHeight="58dp"
+        android:minWidth="100dp"
+        android:minHeight="58dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnrBranch" />
+
+    <ImageButton
+        android:id="@+id/btnSearch"
+        style="@style/ButtonOnly"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/src"
+        android:src="@drawable/icon_search"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrint"
+        app:layout_constraintTop_toBottomOf="@+id/spnrUser" />
+
+    <ImageButton
+        android:id="@+id/btnPrint"
+        style="@style/ButtonOnly"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/prt"
+        android:src="@drawable/icon_print"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnrUser" />
+
+    <LinearLayout
+        android:id="@+id/lnrSearch"
+        style="@style/FullBorderInvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnrService">
+
+        <EditText
+            android:id="@+id/txtSearch"
+            style="@style/NoBorder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:gravity="center_vertical"
+            android:hint="@string/type_for_filter"
+            android:inputType="text"
+            android:maxHeight="48dp"
+            android:minHeight="48dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FullBorderInvert"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnrService">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyVew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/rcy_view"
+                android:labelFor="@id/rcyVew" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fltAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/heading"
+        android:clickable="true"
+        android:contentDescription="@string/add"
+        android:src="@drawable/icon_add"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/light" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

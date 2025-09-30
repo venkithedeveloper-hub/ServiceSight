@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light">#bdc7c9</color>
+    <color name="dark">#424242</color>
+    <color name="backcolor">#FC9891</color>
+    <color name="top_color">#113946</color>
+    <color name="heading">#845560</color>
+    <color name="head">#F37F21</color>
+    <color name="green">#008060</color>
+    <color name="red">#C50046</color>
+    <color name="intime">#a3b763</color>
+    <color name="outtime">#af2655</color>
+    <color name="orange">#F38901</color>
+    <color name="approve">#74E291</color>
+    <color name="rejected">#FF6868</color>
+    <color name="pending">#EEC759</color>
+    <color name="yellow">#F5C154</color>
+    <color name="grey">#737373</color>
+    <color name="text">#3A3335</color>
+    <color name="bgcolor">#bdc7c9</color>
+    <color name="applight">#DEFFEB</color>
+    <color name="delete">#FF5B5B</color>
+    <color name="headdark">#2f1d20</color>
+</resources>

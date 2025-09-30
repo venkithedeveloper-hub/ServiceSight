@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "819563331641",
+    "project_id": "servicesight-app",
+    "storage_bucket": "servicesight-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819563331641:android:00a4fcf8f1cdb1fadc8de8",
+        "android_client_info": {
+          "package_name": "com.ats.servicesight"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAcZcZr2igbDIFL7HSuRAWCsyJmgqtkn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

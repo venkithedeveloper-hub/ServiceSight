@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuCustomer"
+            android:icon="@drawable/icon_customer"
+            android:title="@string/customer" />
+        <item
+            android:id="@+id/menuInward"
+            android:icon="@drawable/icon_inw"
+            android:title="@string/inward" />
+        <item
+            android:id="@+id/menuDelivery"
+            android:icon="@drawable/icon_dly"
+            android:title="@string/delivery" />
+        <item
+            android:id="@+id/menuUser"
+            android:icon="@drawable/icon_user"
+            android:title="@string/users" />
+        <item
+            android:id="@+id/menuReport"
+            android:icon="@drawable/icon_report"
+            android:title="@string/report" />
+        <item
+            android:id="@+id/menuLogout"
+            android:icon="@drawable/icon_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>
